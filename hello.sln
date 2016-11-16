@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello", "hello\hello.vcxproj", "{D3DEE619-C898-4879-8A3D-4961F0A17116}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58C617DB-9A08-4066-999B-04DB739112C7} = {58C617DB-9A08-4066-999B-04DB739112C7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxproj", "{58C617DB-9A08-4066-999B-04DB739112C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello2", "hello2\hello2.vcxproj", "{1887EBC0-8D23-4F53-8C86-46D993E1ADD7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threads", "threads\threads.vcxproj", "{3992862D-5BA5-44D9-A8C8-954B2B0565A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58C617DB-9A08-4066-999B-04DB739112C7} = {58C617DB-9A08-4066-999B-04DB739112C7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventHandler", "EventHandler\EventHandler.vcxproj", "{4148B8FA-F01D-4869-B003-7BFC071C5BB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windows", "windows\windows.vcxproj", "{EE334016-A9FE-4D30-9ACB-A3CD66218E23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3DEE619-C898-4879-8A3D-4961F0A17116}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3DEE619-C898-4879-8A3D-4961F0A17116}.Debug|Win32.Build.0 = Debug|Win32
+		{D3DEE619-C898-4879-8A3D-4961F0A17116}.Release|Win32.ActiveCfg = Release|Win32
+		{D3DEE619-C898-4879-8A3D-4961F0A17116}.Release|Win32.Build.0 = Release|Win32
+		{58C617DB-9A08-4066-999B-04DB739112C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58C617DB-9A08-4066-999B-04DB739112C7}.Debug|Win32.Build.0 = Debug|Win32
+		{58C617DB-9A08-4066-999B-04DB739112C7}.Release|Win32.ActiveCfg = Release|Win32
+		{58C617DB-9A08-4066-999B-04DB739112C7}.Release|Win32.Build.0 = Release|Win32
+		{1887EBC0-8D23-4F53-8C86-46D993E1ADD7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1887EBC0-8D23-4F53-8C86-46D993E1ADD7}.Debug|Win32.Build.0 = Debug|Win32
+		{1887EBC0-8D23-4F53-8C86-46D993E1ADD7}.Release|Win32.ActiveCfg = Release|Win32
+		{1887EBC0-8D23-4F53-8C86-46D993E1ADD7}.Release|Win32.Build.0 = Release|Win32
+		{3992862D-5BA5-44D9-A8C8-954B2B0565A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3992862D-5BA5-44D9-A8C8-954B2B0565A2}.Debug|Win32.Build.0 = Debug|Win32
+		{3992862D-5BA5-44D9-A8C8-954B2B0565A2}.Release|Win32.ActiveCfg = Release|Win32
+		{3992862D-5BA5-44D9-A8C8-954B2B0565A2}.Release|Win32.Build.0 = Release|Win32
+		{4148B8FA-F01D-4869-B003-7BFC071C5BB2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4148B8FA-F01D-4869-B003-7BFC071C5BB2}.Debug|Win32.Build.0 = Debug|Win32
+		{4148B8FA-F01D-4869-B003-7BFC071C5BB2}.Release|Win32.ActiveCfg = Release|Win32
+		{4148B8FA-F01D-4869-B003-7BFC071C5BB2}.Release|Win32.Build.0 = Release|Win32
+		{EE334016-A9FE-4D30-9ACB-A3CD66218E23}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE334016-A9FE-4D30-9ACB-A3CD66218E23}.Debug|Win32.Build.0 = Debug|Win32
+		{EE334016-A9FE-4D30-9ACB-A3CD66218E23}.Release|Win32.ActiveCfg = Release|Win32
+		{EE334016-A9FE-4D30-9ACB-A3CD66218E23}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
