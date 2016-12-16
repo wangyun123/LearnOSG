@@ -45,5 +45,8 @@ int main()
 	viewer->addEventHandler(new ChangeWindow());
 	viewer->run();
 
+	std::vector<int> vec;
+	std::vector<int>::iterator itt;
+
 	return 0;
 }

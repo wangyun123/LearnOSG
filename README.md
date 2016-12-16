@@ -1,4 +1,4 @@
-# LearnOSG
+# 工程1 LearnOSG
 
 时间：2016-11-16
 来源：高攀
@@ -10,3 +10,8 @@ http://bbs.osgchina.org/forum.php?mod=viewthread&tid=4815&extra=page%3D1&_dsign=
 
 https://github.com/wangyun123/LearnOSG
 
+
+# 工程2 Learn02
+
+时间：2016-12-08
+来源：网易云课堂 c/c++/windows/linux零基础入门到精通全套
