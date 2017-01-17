@@ -25,5 +25,6 @@ extern "C" TEST_LIBRARY_API int add3(int a, int b);
 extern "C" TEST_LIBRARY_API int sub3(int a, int b);
 extern "C" TEST_LIBRARY_API int mul3(int a, int b);
 extern "C" TEST_LIBRARY_API int div3(int a, int b);
+extern "C" int add(int a, int b);
 
 #endif //LIBRARY_03_H

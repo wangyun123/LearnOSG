@@ -32,9 +32,9 @@
 // 可以像DLL一样，在EXE里导出函数。调用时可以静态链接也可以动态加载。
 // EXE只作为一个进程内的模块被加载，不会新起一个进程。加载过程中EXE中的WinMain函数不会被调用。
 
-#ifdef DYNAMIC_LOADING
-#include "../library01/library01.h"
-#pragma comment(lib, "../debug/library01.lib")
+#ifndef DYNAMIC_LOADING
+#include "../library04/library04.h"
+#pragma comment(lib, "../debug/library04.lib")
 #endif
 
 int main(int argc, char* argv[])
@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 	//! 静态加载库文件
 	printf("dynamic loading the library!\n");
 	int result;
-	result = add(10,20);
+	result = add4(10,20);
 	printf("static library01, this is exe file! result=%d\n", result);
 #else
 	//! 动态加载库文件

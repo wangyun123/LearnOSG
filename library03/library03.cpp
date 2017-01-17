@@ -18,3 +18,8 @@ int div3(int a, int b)
 		return a;
 	return a/b;
 }
+
+int add(int a, int b)
+{
+	return a+b;
+}
