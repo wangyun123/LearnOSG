@@ -25,7 +25,7 @@
 #include <Windows.h>
 #include <tchar.h>
 
-//#define DYNAMIC_LOADING
+#define DYNAMIC_LOADING
 
 // exe文件同样可以导出函数定义
 // 参考：http://www.cppblog.com/Streamlet/archive/2012/12/01/195858.html
@@ -33,20 +33,46 @@
 // EXE只作为一个进程内的模块被加载，不会新起一个进程。加载过程中EXE中的WinMain函数不会被调用。
 
 #ifndef DYNAMIC_LOADING
-#include "../library04/library04.h"
-#pragma comment(lib, "../debug/library04.lib")
+#include "../library03/library03.h"
+#pragma comment(lib, "../release/library03.lib")
 #endif
 
 int main(int argc, char* argv[])
 {
-#ifdef DYNAMIC_LOADING
+#ifndef DYNAMIC_LOADING
 	//! 静态加载库文件
-	printf("dynamic loading the library!\n");
+	printf("[1] static loading the library!\n");
 	int result;
-	result = add4(10,20);
-	printf("static library01, this is exe file! result=%d\n", result);
+	result = add3(10,20);
+	printf("static loading the library03, result=%d\n", result);
+	getchar();
 #else
 	//! 动态加载库文件
+	printf("[2] dynamic loading the library!\n");
+	HMODULE hModule = LoadLibrary(_T("library03.dll"));
+	if (hModule == nullptr)
+	{
+		printf("can't load library03.dll !\n");
+		return 0;
+	}
+	typedef int (*Func)(int a, int b);
+	Func add = (Func)GetProcAddress(hModule, "add3");
+	if (add == nullptr)
+	{
+		printf("can't load func add3 !\n");
+		return 0;
+	}
+
+	int result;
+	result = add(10,20);
+	printf("dynamic loading the library03, result=%d\n", result);
+	getchar();
+
+	FreeLibrary(hModule);
+#endif
+
+#if 0
+	//! 加载exe可执行文件
 	HMODULE hModule = LoadLibrary(_T("library01.exe"));
 	if (hModule== nullptr)
 	{
