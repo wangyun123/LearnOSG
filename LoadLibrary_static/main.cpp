@@ -15,7 +15,12 @@
 #include <stdio.h>
 
 #include "../library03/library03.h"
+
+#ifdef _DEBUG
+#pragma comment(lib, "../debug/library03.lib")
+#else
 #pragma comment(lib, "../release/library03.lib")
+#endif
 
 int main(int argc, char* argv[])
 {

@@ -5,7 +5,7 @@
 #include <OpenThreads/Thread>
 
 #ifdef _DEBUG
-#pragma comment(lib, "../Debug/commond.lib")
+#pragma comment(lib, "../Debug/common.lib")
 #else
 #pragma comment(lib, "../Release/common.lib")
 #endif

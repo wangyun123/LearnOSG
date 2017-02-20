@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Develop\OSG\OpenSceneGraph-3.4.0\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Develop\OSG\OpenSceneGraph-3.4.0\build\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OSG_ROOT)/build/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_ROOT)/build/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -59,7 +59,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OSG_ROOT)/lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OSG_ROOT)/build/lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

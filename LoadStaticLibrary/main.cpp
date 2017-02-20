@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 #include "../staticLibrary1/lib.h"
+
+#ifdef _DEBUG
+#pragma comment(lib, "../debug/staticLibrary1.lib")
+#else
 #pragma comment(lib, "../release/staticLibrary1.lib")
+#endif
 
 int main(int argc, char* argv[])
 {
