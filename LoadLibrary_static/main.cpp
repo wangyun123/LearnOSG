@@ -2,6 +2,9 @@
 *	学习windows下动态库编程技术
 *	参考：
 *	动态链接库的两种调用方式： 静态加载和动态加载
+*	
+*			即：	1）装入时动态链接；load-time dynamic linking
+*				2）运行时动态链接；run-time dynamic linking
 *
 *	1、工程LoadLibrary_static: 静态加载/静态链接
 *	   1) 采用#pragma comment(lib, "**.lib")的方式
