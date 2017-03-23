@@ -20,6 +20,7 @@ void func_1()
 	int* a2 = (int*)203;
 	printf("%d\n", a2-a1);
 }
+
 void func1()
 {
 
@@ -85,6 +86,8 @@ int main(int argc, char* argv[])
 // 	printf("%d\n", sizeof(S3));
 // 	printf("%d\n", sizeof(S4));
 
+	func1();
 	func2(1,2);
+	func3(3,4);
 	return 0;
 }
