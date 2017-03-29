@@ -5,6 +5,7 @@
     <name>Dialog</name>
     <message>
         <location filename="dialog.ui" line="14"/>
+        <location filename="ui_dialog.h" line="47"/>
         <source>Dialog</source>
         <translation>对话框</translation>
     </message>
@@ -31,6 +32,7 @@
     <name>DialogTranslator</name>
     <message>
         <location filename="dialogtranslator.ui" line="16"/>
+        <location filename="ui_dialogtranslator.h" line="47"/>
         <source>Dialog</source>
         <translation>对话框</translation>
     </message>
@@ -84,36 +86,43 @@
     <name>MainWindow</name>
     <message>
         <location filename="mainwindow.ui" line="14"/>
+        <location filename="ui_mainwindow.h" line="72"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="28"/>
+        <location filename="ui_mainwindow.h" line="76"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="39"/>
+        <location filename="ui_mainwindow.h" line="73"/>
         <source>new</source>
         <translation>新建</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="44"/>
+        <location filename="ui_mainwindow.h" line="74"/>
         <source>open</source>
         <translation>打开</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="49"/>
+        <location filename="ui_mainwindow.h" line="75"/>
         <source>save</source>
         <translation>保存</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="14"/>
+        <location filename="mainwindow.cpp" line="72"/>
         <source>dialog</source>
         <translation>对话框</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="15"/>
+        <location filename="mainwindow.cpp" line="73"/>
         <source>language</source>
         <translation>语言</translation>
     </message>
