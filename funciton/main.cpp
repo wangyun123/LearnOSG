@@ -28,19 +28,30 @@ int func3(int a, int b)
 void func4()
 {
 	int a;
-	int b;
-	int c;
-	c=a+b;
+	a=1;
 }
-
+//5、指针参数
+void func5(int* a)
+{
+	//a = (int*)10;
+	*a = 10;
+}
+//6、指针参数
+void func6(int& a)
+{
+	a=10;
+}
 int main(int argc, char* argv[])
 {
-// 	int a=1;
-// 	int b=2;
-// 	int c=3;
+ 	int a=1;
+ 	int b=2;
+ 	int c=3;
 	func1();
 	func2(1,2);
-	int c=func3(1,2);
+	c=func3(1,2);
 	func4();
+	int* pa = &a;
+	func5(pa);
+	func6(b);
 	return 0;
 }
