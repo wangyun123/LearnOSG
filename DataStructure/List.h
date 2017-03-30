@@ -18,11 +18,12 @@ public:
 	void clear();
 	DWORD getElement(DWORD dwIndex, int& elem);
 	DWORD getElementIndex(int& elem);
-	DWORD insert(DWORD dwIndex, int elem);
-	DWORD push_back(int& elem);
-	DWORD pop_back();
-	DWORD remove(DWORD dwIndex);
-	DWORD getSize();
+	DWORD find(int elem);	// 查找某个数据
+	DWORD insert(DWORD dwIndex, int elem);	// 指定位置插入数据
+	DWORD push_back(int elem);	// 尾部插入数据
+	DWORD pop_back();			// 尾部删除数据
+	DWORD remove(DWORD dwIndex);// 删除指定数据
+	DWORD getSize();			// 获取链表长度
 
 	void print();
 private:
@@ -30,7 +31,7 @@ private:
 	PNODE getIndexPrevNode(DWORD dwIndex);
 	PNODE getIndexNextNode(DWORD dwIndex);
 private:
-	PNODE m_pList;
+	PNODE m_pListHead;
 	DWORD m_dwLength;
 };
 
