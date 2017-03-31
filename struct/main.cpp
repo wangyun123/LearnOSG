@@ -35,12 +35,13 @@ int main(int argc, char* argv[])
 	printf("size of student4:%d\n", sizeof(Student4));
 
 // 	Student1 st1;
-// 	Student2 st2;
+	Student2 st2;
+	Student2 st3 = {0};
 // 	st2.a=10;
 // 	st2.b=11;
 // 	Student3 st3;
-	Student4 st4;
-	st4.func();
+// 	Student4 st4;
+// 	st4.func();
 
 	return 0;
 }
