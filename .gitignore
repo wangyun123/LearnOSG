@@ -36,3 +36,5 @@ testTranslator/ui_dialog.h
 testTranslator/ui_dialogtranslator.h
 testTranslator/ui_mainwindow.h
 *.qm
+testWidgets/GeneratedFiles/qrc_testwidgets.cpp
+testWidgets/GeneratedFiles/ui_testwidgets.h
