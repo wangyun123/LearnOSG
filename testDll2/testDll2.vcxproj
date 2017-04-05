@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{84D4F45F-CEA6-401D-B62B-A228D8E02EBB}</ProjectGuid>
+    <ProjectGuid>{7EB3FF17-3FB8-49B7-BA9D-C83023C5BCCE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>struct</RootNamespace>
+    <RootNamespace>testDll2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,10 +75,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="struct.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="struct.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

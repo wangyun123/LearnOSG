@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	typedef int (*Func)(int a, int b);
-	Func add = (Func)GetProcAddress(hModule, "add");
+	Func add = (Func)GetProcAddress(hModule, "add4");
 	if (add == nullptr)
 	{
 		printf("can't load func add !\n");

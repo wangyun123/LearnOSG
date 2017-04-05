@@ -4,7 +4,7 @@
 int main(int argc, char* argv[])
 {
 	// run-time load the dynamic library
-	HMODULE hModule = LoadLibraryA("../debug/Library04.dll");
+	HMODULE hModule = LoadLibraryA("../debug/DynamicLibrary1.dll");
 	if (hModule == NULL)
 	{
 		printf("the LoadLibrary error! \n");
@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 
 	typedef int (*Func)(int a, int b);
 	//Func func1 = (Func)GetProcAddress(hModule, "div1");
-	Func func1 = (Func)GetProcAddress(hModule, "add4");
+	Func func1 = (Func)GetProcAddress(hModule, "div1");
 	if (func1 == NULL)
 	{
 		printf("the GetProcAddress error! \n");

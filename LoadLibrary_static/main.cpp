@@ -17,12 +17,12 @@
 
 #include <stdio.h>
 
-#include "../library04/library04.h"
+#include "../library03/library03.h"
 
 #ifdef _DEBUG
-#pragma comment(lib, "../debug/library04.lib")
+#pragma comment(lib, "../debug/library03.lib")
 #else
-#pragma comment(lib, "../release/library04.lib")
+#pragma comment(lib, "../release/library03.lib")
 #endif
 
 int main(int argc, char* argv[])
@@ -30,8 +30,8 @@ int main(int argc, char* argv[])
 	//! ¾²Ì¬¼ÓÔØ¿âÎÄ¼ş
 	printf("[1] static loading the library!\n");
 	int result;
-	result = add4(10,20);
-	printf("static loading the library04, result=%d\n", result);
+	result = add3(10,20);
+	printf("static loading the library03, result=%d\n", result);
 	getchar();
 
 	return 0;

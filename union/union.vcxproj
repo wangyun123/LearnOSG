@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{84D4F45F-CEA6-401D-B62B-A228D8E02EBB}</ProjectGuid>
+    <ProjectGuid>{C0C5966A-58A0-4AFA-A94F-99101EA1E31F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>struct</RootNamespace>
+    <RootNamespace>union</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,10 +75,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="struct.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="struct.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
