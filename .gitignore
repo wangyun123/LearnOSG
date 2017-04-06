@@ -38,3 +38,12 @@ testTranslator/ui_mainwindow.h
 *.qm
 testWidgets/GeneratedFiles/qrc_testwidgets.cpp
 testWidgets/GeneratedFiles/ui_testwidgets.h
+DynamicLibrary/testLoadTime/testLoadTime.plg
+DynamicLibrary/testRunTime/testRunTime.plg
+DynamicLibrary.rar
+DynamicLibrary/library1/library1.plg
+DynamicLibrary/library2/library2.plg
+DynamicLibrary/library2/ReadMe.txt
+DynamicLibrary/library3/library3.plg
+DynamicLibrary/test/test.opt
+DynamicLibrary/test/test.plg
