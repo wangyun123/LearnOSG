@@ -27,6 +27,7 @@ void func(_In_ int a)
 }
 int main(int argc, char* argv[])
 {
+#if 1
 // 	setlocale(LC_ALL,"");
 // 	char y = "жа";
 	char x[] = "жа";
@@ -38,6 +39,21 @@ int main(int argc, char* argv[])
 	printf("%s\n", x);
 	printf("%s\n", x1);
 	printf("%s\n", x3);
+#else
+	BOOL a0 = 0x61;
+	BYTE a1 = 0x61;
+	UINT a2 = 0x61;
+	WORD a3 = 0x61;
+	DWORD a4 = 0x61;
+
+	printf("%x\n", a0);
+	printf("%x\n", a1);
+	printf("%x\n", a2);
+	printf("%x\n", a3);
+	printf("%x\n", a4);
+
+#endif
+
 	getchar();
 
 	return 0;

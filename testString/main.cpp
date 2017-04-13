@@ -26,9 +26,14 @@
 #include <string>
 #include <QtCore/QCoreApplication>
 
+void func()
+{
+
+}
 int main(int argc, char *argv[])
 {
 	QCoreApplication a(argc, argv);
+	func();
 	printf("Hello world!\n");
 // 	char* str10 = "授权激活";//"啊";//
 // 	char str11[] = "授权激活";
