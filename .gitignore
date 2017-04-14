@@ -47,3 +47,7 @@ DynamicLibrary/library2/ReadMe.txt
 DynamicLibrary/library3/library3.plg
 DynamicLibrary/test/test.opt
 DynamicLibrary/test/test.plg
+testQT/console/dialog/GeneratedFiles/qrc_dialog.cpp
+testQT/console/dialog/GeneratedFiles/ui_dialog.h
+testQT/console/mainwindow/GeneratedFiles/qrc_mainwindow.cpp
+testQT/console/mainwindow/GeneratedFiles/ui_mainwindow.h
