@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 {
 	QCoreApplication a(argc, argv);
 	func();
-	printf("Hello world!\n");
+// 	printf("Hello world!\n");
 // 	char* str10 = "授权激活";//"啊";//
 // 	char str11[] = "授权激活";
 // 	QString str1("授权激活");
@@ -42,9 +42,9 @@ int main(int argc, char *argv[])
 // 	QString str3(QString::fromUtf8(u8"啊"));	//c++11
 // 	QString str4(QObject::tr("啊"));
 
-	char* str1 = "china";
-	char* str2 = "啊中文";
-	printf("%s\n%s\n", str1, str2);
+// 	char* str1 = "china";
+// 	char* str2 = "啊中文";
+// 	printf("%s\n%s\n", str1, str2);
 
 #if 0
 	QTextCodec::setCodecForCStrings(QTextCodec::codecForName("GB2312"));
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	QMessageBox::information(NULL, "Title", t1+"\n"+t2+"\n"+t3, QMessageBox::Ok);
 #endif
 
-	getchar();
+// 	getchar();
 	//system("pause");
 
 	return a.exec();
