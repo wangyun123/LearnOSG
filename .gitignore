@@ -51,3 +51,9 @@ testQT/console/dialog/GeneratedFiles/qrc_dialog.cpp
 testQT/console/dialog/GeneratedFiles/ui_dialog.h
 testQT/console/mainwindow/GeneratedFiles/qrc_mainwindow.cpp
 testQT/console/mainwindow/GeneratedFiles/ui_mainwindow.h
+LearnQT/console/dialog/GeneratedFiles/qrc_dialog.cpp
+LearnQT/console/dialog/GeneratedFiles/ui_dialog.h
+LearnQT/console/mainwindow/GeneratedFiles/qrc_mainwindow.cpp
+LearnQT/console/mainwindow/GeneratedFiles/ui_mainwindow.h
+LearnQT/testWidgets/GeneratedFiles/qrc_testwidgets.cpp
+LearnQT/testWidgets/GeneratedFiles/ui_testwidgets.h

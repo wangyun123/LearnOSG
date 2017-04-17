@@ -43,6 +43,7 @@ void func6(int& a)
 }
 int main(int argc, char* argv[])
 {
+	int bb = 0x12345678;
  	int a=1;
  	int b=2;
  	int c=3;
