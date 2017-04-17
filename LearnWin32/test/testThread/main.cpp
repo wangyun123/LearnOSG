@@ -26,8 +26,13 @@ HANDLE hThread=NULL;	// 线程句柄
 
 // 对话框的消息响应函数
 BOOL CALLBACK MainDlgProc(HWND   hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam);
-// 线程函数
-DWORD WINAPI ThreadProc(LPVOID lpParameter);
+
+// 线程1 函数
+DWORD WINAPI ThreadProc1(LPVOID lpParameter);
+// 线程2 函数
+DWORD WINAPI ThreadProc2(LPVOID lpParameter);
+// 线程3 函数
+DWORD WINAPI ThreadProc3(LPVOID lpParameter);
 
 int APIENTRY _tWinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
@@ -66,7 +71,11 @@ BOOL CALLBACK MainDlgProc(HWND   hwndDlg,
 			case IDC_BUTTON_START:
 				{
 					LPDWORD lpThreadId=NULL;
-					hThread = ::CreateThread(NULL, 0, ThreadProc, NULL, 0,lpThreadId);
+					hThread = ::CreateThread(NULL, 0, ThreadProc1, NULL, 0,lpThreadId);
+					// 获取context
+					CONTEXT context;
+					context.ContextFlags = CONTEXT_CONTROL;
+					::GetThreadContext(hThread, &context);
 					break;
 				}
 			case IDC_BUTTON_SUSPEND:
@@ -95,9 +104,6 @@ BOOL CALLBACK MainDlgProc(HWND   hwndDlg,
 
 DWORD WINAPI ThreadProc(LPVOID lpParameter)
 {
-// 	hEdit= GetDlgItem(hwndDlg, IDC_EDIT_COUNT);
-// 	LPCTSTR str=L"1000";
-// 	sscanf();
 	while(nCount>0)
 	{
 		if (nCount == 950)
@@ -111,6 +117,19 @@ DWORD WINAPI ThreadProc(LPVOID lpParameter)
 		swprintf(str, L"%d", --nCount);
 		Sleep(200);
 		SetWindowText(hEdit, str);
+	}
+
+	// [结束线程方式 2]正常等待线程运行结束
+	return 0;
+}
+
+DWORD WINAPI ThreadProc1(LPVOID lpParameter)
+{
+	int i;
+	while(i>10)
+	{
+// 		printf();
+		Sleep(200);
 	}
 
 	// [结束线程方式 2]正常等待线程运行结束

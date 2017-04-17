@@ -20,6 +20,7 @@
 
 #include <stdio.h>
 #include <locale.h>
+#include <Windows.h>
 
 void func(_In_ int a)
 {
@@ -28,17 +29,21 @@ void func(_In_ int a)
 int main(int argc, char* argv[])
 {
 #if 1
+	TCHAR* tc=L"a中";
+	WCHAR* wc=L"a中";
+	printf("TCHAR:%d\n", lstrlen(tc));
+	printf("TCHAR:%d\n", lstrlen(wc));
 // 	setlocale(LC_ALL,"");
 // 	char y = "中";
-	char x[] = "中";
-	char x1[] = {0xd6, 0xd0, 0};
-	//wchar_t x2 = "中";
-	wchar_t x3[] = L"中";
+// 	char x[] = "中";
+// 	char x1[] = {0xd6, 0xd0, 0};
+// 	//wchar_t x2 = "中";
+// 	wchar_t x3[] = L"中";
 // 	TCHAR tc;
 
-	printf("%s\n", x);
-	printf("%s\n", x1);
-	printf("%s\n", x3);
+// 	printf("%s\n", x);
+// 	printf("%s\n", x1);
+// 	printf("%s\n", x3);
 #else
 	BOOL a0 = 0x61;
 	BYTE a1 = 0x61;
